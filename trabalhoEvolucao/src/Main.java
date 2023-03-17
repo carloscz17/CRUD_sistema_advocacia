@@ -40,13 +40,13 @@ public class Main {
         JFrame frame = new JFrame("Sistema de escritório de Advocácia");
 
 
-        JButton clientButton = new JButton("Cliente"); // botão Entidades.Cliente
+        JButton clientButton = new JButton("Cliente"); // botão Cliente
         clientButton.setBounds(150, 70, 100, 25); // configura a posição e o tamanho do botão
 
-        JButton advogadoButton = new JButton("Advogado"); // botão Entidades.Advogado
+        JButton advogadoButton = new JButton("Advogado"); // botão Advogado
         advogadoButton.setBounds(150, 100, 100, 25); // configura a posição e o tamanho do botão
 
-        JButton processButton = new JButton("Processo"); // botão Entidades.Processo
+        JButton processButton = new JButton("Processo"); // botão Processo
         processButton.setBounds(150, 130, 100, 25); // configura a posição e o tamanho do botão
 
         JButton petitionButton = new JButton("Petição"); // botão Petição
