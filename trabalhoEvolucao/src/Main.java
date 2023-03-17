@@ -208,8 +208,8 @@ public class Main {
                 JTextField campoEmail = new JTextField();
                 JLabel labelTelefone = new JLabel("Telefone:");
                 JTextField campoTelefone = new JTextField();
-                JLabel labelEndereco = new JLabel("Rua:");
-                JTextField campoEndereco = new JTextField();
+                JLabel labelrua = new JLabel("Rua:");
+                JTextField campoRua = new JTextField();
                 JButton botaoAdicionar = new JButton("Adicionar");
                 JButton botaoRemover = new JButton("Remover");
 
@@ -218,7 +218,7 @@ public class Main {
                     String cnpj = campoCnpj.getText();
                     String email = campoEmail.getText();
                     String telefone = campoTelefone.getText();
-                    String endereco = campoEndereco.getText();
+                    String endereco = campoRua.getText();
                     if (!nome.isEmpty() && !cnpj.isEmpty() && !email.isEmpty() && !telefone.isEmpty() && !endereco.isEmpty()) {
                         Advogado advogado = new Advogado(nome, cnpj, email, telefone, endereco);
                         advogados.add(advogado);
@@ -228,7 +228,7 @@ public class Main {
                         campoCnpj.setText("");
                         campoEmail.setText("");
                         campoTelefone.setText("");
-                        campoEndereco.setText("");
+                        campoRua.setText("");
                     } else {
                         JOptionPane.showMessageDialog(null, "Por favor, preencha todos os campos!");
                     }
@@ -253,12 +253,12 @@ public class Main {
                 painelFormulario.add(campoEmail);
                 painelFormulario.add(labelTelefone);
                 painelFormulario.add(campoTelefone);
-                painelFormulario.add(labelEndereco);
-                painelFormulario.add(campoEndereco);
+                painelFormulario.add(labelrua);
+                painelFormulario.add(campoRua);
                 painelFormulario.add(botaoAdicionar);
                 painelFormulario.add(botaoRemover);
 
-                modeloTabelaAdvogados = new DefaultTableModel(new Object[] {"Nome", "CNPJ", "E-mail", "Telefone", "Endereço"}, 0);
+                modeloTabelaAdvogados = new DefaultTableModel(new Object[] {"Nome", "CNPJ", "E-mail", "Telefone", "Rua"}, 0);
                 tabelaAdvogados = new JTable(modeloTabelaAdvogados);
                 JScrollPane painelTabela = new JScrollPane(tabelaAdvogados);
 
