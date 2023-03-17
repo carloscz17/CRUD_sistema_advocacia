@@ -1,3 +1,5 @@
+package Entidades;
+
 public class Processo {
     private String processo;
     private String advogado;
