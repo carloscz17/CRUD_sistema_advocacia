@@ -116,7 +116,7 @@ public class Main {
                 JTextField campoEmail = new JTextField();
                 JLabel labelTelefone = new JLabel("Telefone:");
                 JTextField campoTelefone = new JTextField();
-                JLabel labelEndereco = new JLabel("Endereço:");
+                JLabel labelEndereco = new JLabel("Rua:");
                 JTextField campoEndereco = new JTextField();
                 JButton botaoAdicionar = new JButton("Adicionar");
                 JButton botaoRemover = new JButton("Remover");
@@ -167,7 +167,7 @@ public class Main {
                 painelFormulario.add(botaoAdicionar);
                 painelFormulario.add(botaoRemover);
 
-                modeloTabelaClientes = new DefaultTableModel(new Object[] {"Nome", "CPF", "E-mail", "Telefone", "Endereço"}, 0);
+                modeloTabelaClientes = new DefaultTableModel(new Object[] {"Nome", "CPF", "E-mail", "Telefone", "Rua"}, 0);
                 tabelaClientes = new JTable(modeloTabelaClientes);
                 JScrollPane painelTabela = new JScrollPane(tabelaClientes);
 
@@ -208,7 +208,7 @@ public class Main {
                 JTextField campoEmail = new JTextField();
                 JLabel labelTelefone = new JLabel("Telefone:");
                 JTextField campoTelefone = new JTextField();
-                JLabel labelEndereco = new JLabel("Endereço:");
+                JLabel labelEndereco = new JLabel("Rua:");
                 JTextField campoEndereco = new JTextField();
                 JButton botaoAdicionar = new JButton("Adicionar");
                 JButton botaoRemover = new JButton("Remover");
