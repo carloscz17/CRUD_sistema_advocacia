@@ -91,7 +91,7 @@ public class Main {
             }
         });
 
-        frame.add(clientButton); // adiciona o botão Entidades.Cliente à janela
+        frame.add(clientButton); // adiciona o botão Cliente à janela
         clientButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -182,7 +182,7 @@ public class Main {
 
             }
         });
-        frame.add(advogadoButton); // adiciona o botão Entidades.Advogado à janela
+        frame.add(advogadoButton); // adiciona o botão Advogado à janela
 
         advogadoButton.addActionListener(new ActionListener() {
             @Override
@@ -274,7 +274,7 @@ public class Main {
             }
 
         });
-        frame.add(processButton); // adiciona o botão Entidades.Processo à janela
+        frame.add(processButton); // adiciona o botão Processo à janela
         processButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
