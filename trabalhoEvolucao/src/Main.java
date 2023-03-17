@@ -1,3 +1,8 @@
+import Entidades.Advogado;
+import Entidades.Cliente;
+import Entidades.Peticao;
+import Entidades.Processo;
+
 import  javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -16,7 +21,7 @@ import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
 
-public class Menu {
+public class Main {
     private static List<Cliente> clientes;
     private static List<Advogado> advogados;
     private static List<Processo> processos;
@@ -35,13 +40,13 @@ public class Menu {
         JFrame frame = new JFrame("Sistema de escritório de Advocácia");
 
 
-        JButton clientButton = new JButton("Cliente"); // botão Cliente
+        JButton clientButton = new JButton("Cliente"); // botão Entidades.Cliente
         clientButton.setBounds(150, 70, 100, 25); // configura a posição e o tamanho do botão
 
-        JButton advogadoButton = new JButton("Advogado"); // botão Advogado
+        JButton advogadoButton = new JButton("Advogado"); // botão Entidades.Advogado
         advogadoButton.setBounds(150, 100, 100, 25); // configura a posição e o tamanho do botão
 
-        JButton processButton = new JButton("Processo"); // botão Processo
+        JButton processButton = new JButton("Processo"); // botão Entidades.Processo
         processButton.setBounds(150, 130, 100, 25); // configura a posição e o tamanho do botão
 
         JButton petitionButton = new JButton("Petição"); // botão Petição
@@ -86,7 +91,7 @@ public class Menu {
             }
         });
 
-        frame.add(clientButton); // adiciona o botão Cliente à janela
+        frame.add(clientButton); // adiciona o botão Entidades.Cliente à janela
         clientButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -177,7 +182,7 @@ public class Menu {
 
             }
         });
-        frame.add(advogadoButton); // adiciona o botão Advogado à janela
+        frame.add(advogadoButton); // adiciona o botão Entidades.Advogado à janela
 
         advogadoButton.addActionListener(new ActionListener() {
             @Override
@@ -217,7 +222,7 @@ public class Menu {
                     if (!nome.isEmpty() && !cnpj.isEmpty() && !email.isEmpty() && !telefone.isEmpty() && !endereco.isEmpty()) {
                         Advogado advogado = new Advogado(nome, cnpj, email, telefone, endereco);
                         advogados.add(advogado);
-                        modeloTabelaAdvogados.addRow(new Object[]{advogado.getNome(), advogado.getCnpj(), advogado.getEmail(), advogado.getTelefone(), advogado.getEndereco()});
+                        modeloTabelaAdvogados.addRow(new Object[]{advogado.getNome(), advogado.getCpf(), advogado.getEmail(), advogado.getTelefone(), advogado.getEndereco()});
                         JOptionPane.showMessageDialog(null, "Advogado adicionado com sucesso!");
                         campoNome.setText("");
                         campoCnpj.setText("");
@@ -269,7 +274,7 @@ public class Menu {
             }
 
         });
-        frame.add(processButton); // adiciona o botão Processo à janela
+        frame.add(processButton); // adiciona o botão Entidades.Processo à janela
         processButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

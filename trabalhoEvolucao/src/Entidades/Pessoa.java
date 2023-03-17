@@ -1,17 +1,18 @@
-public class Cliente {
+package Entidades;
 
+public class Pessoa {
     private String nome;
-    private String cpf;
     private String email;
     private String telefone;
     private String endereco;
+    private String Cpf;
 
-    public Cliente(String nome, String cpf, String email, String telefone, String endereco) {
+    public Pessoa(String nome, String email, String telefone, String endereco, String Cpf) {
         this.nome = nome;
-        this.cpf = cpf;
         this.email = email;
         this.telefone = telefone;
         this.endereco = endereco;
+        this.Cpf = Cpf;
     }
 
     public String getNome() {
@@ -20,14 +21,6 @@ public class Cliente {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
     }
 
     public String getEmail() {
@@ -52,5 +45,13 @@ public class Cliente {
 
     public void setEndereco(String endereco) {
         this.endereco = endereco;
+    }
+
+    public String getCpf() {
+        return Cpf;
+    }
+
+    public void setCpf(String cpf) {
+        Cpf = cpf;
     }
 }

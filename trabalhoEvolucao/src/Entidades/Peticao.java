@@ -1,3 +1,5 @@
+package Entidades;
+
 public class Peticao {
     private String client;
     private String descricao;
